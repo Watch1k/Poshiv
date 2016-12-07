@@ -1,0 +1,270 @@
+extend includes/_layout
+block title
+	title Главная
+block content
+	.container
+		.breadcrumbs
+			a.breadcrumbs__link(href='#') Главная
+			a.breadcrumbs__link(href='#') Женщинам
+			a.breadcrumbs__link(href='#') Платья и сарафаны
+			a.breadcrumbs__link(href='#') Летние платья
+	.container
+		.container__row
+			include includes/_aside
+			//begin content
+			.content
+				.content__title Платье красивое
+				.content__row.content__row_card-slider
+					//begin card-slider
+					.content__card-slider.card-slider
+						.card-slider__for.js-card-for-slider
+							.card-slider__for-item
+								img.card-slider__for-img(src='img/content/card-slider-1.jpg' alt='image')
+								.card-slider__for-info.card-slider__for-info_blue 5 лет гарантия
+							.card-slider__for-item
+								img.card-slider__for-img(src='img/content/card-slider-1.jpg' alt='image')
+								.card-slider__for-info.card-slider__for-info_blue 5 лет гарантия
+							.card-slider__for-item
+								img.card-slider__for-img(src='img/content/card-slider-1.jpg' alt='image')
+								.card-slider__for-info.card-slider__for-info_blue 5 лет гарантия
+							.card-slider__for-item
+								img.card-slider__for-img(src='img/content/card-slider-1.jpg' alt='image')
+								.card-slider__for-info.card-slider__for-info_blue 5 лет гарантия
+							.card-slider__for-item
+								img.card-slider__for-img(src='img/content/card-slider-1.jpg' alt='image')
+								.card-slider__for-info.card-slider__for-info_blue 5 лет гарантия
+						.card-slider__nav.js-card-nav-slider
+							.card-slider__nav-item
+								img.card-slider__nav-img(src='img/content/card-slider-1.jpg' alt='image')
+							.card-slider__nav-item
+								img.card-slider__nav-img(src='img/content/card-slider-1.jpg' alt='image')
+							.card-slider__nav-item
+								img.card-slider__nav-img(src='img/content/card-slider-1.jpg' alt='image')
+							.card-slider__nav-item
+								img.card-slider__nav-img(src='img/content/card-slider-1.jpg' alt='image')
+							.card-slider__nav-item
+								img.card-slider__nav-img(src='img/content/card-slider-1.jpg' alt='image')
+					//end card-slider
+					//begin slider-desc
+					form.content__slider-desc.slider-desc(action='#')
+						.slider-desc__field
+							.slider-desc__label Артикул:&nbsp;
+								span.slider-desc__label-text 75881
+						.slider-desc__field
+							.slider-desc__label Варианты цветов:&nbsp;
+							.slider-desc__custom-select
+								select.slider-desc__select
+									option.slider-desc__option зеленый
+									option.slider-desc__option красный
+									option.slider-desc__option белый
+									option.slider-desc__option серобуромалиновый
+						.slider-desc__field
+							.slider-desc__label Кол-во штук в одной упаковке:&nbsp;
+								span.slider-desc__label-text 4 шт.
+						.slider-desc__field
+							.slider-desc__label Масса одной упаковки:&nbsp;
+								span.slider-desc__label-text 500 гр
+						.slider-desc__field
+							.slider-desc__label Размер:&nbsp;
+								span.slider-desc__label-text 44-48
+						.slider-desc__field.slider-desc__field_price
+							.slider-desc__price 2 000
+								.slider-desc__price-currency
+						.slider-desc__field.slider-desc__field_half
+							.slider-desc__label Количество:
+							input.slider-desc__number-control.js-number-control(type="number" value="1" min="1" max="100")
+							button.slider-desc__submit(type='submit') Заказать
+						.slider-desc__field.slider-desc__field_phone
+							.slider-desc__label Для заказа по телефону звоните:
+							a.slider-desc__phone(href='tel:88001112233') 8 800 111-22-33
+					//end slider-desc
+				//begin card-about
+				.card-about.content__row
+					.card-about__title О товаре
+					.card-about__label Ткань
+						| &nbsp;
+						span.card-about__label-color креп (вискоза 50%; ПЭ 40%; хлопок 10%)
+					.card-about__label Комплектация
+						| &nbsp;
+						span.card-about__label-color платье
+					.card-about__label Страна-производитель
+						| &nbsp;
+						span.card-about__label-color Киргизия
+					.card-about__label Сертификат
+						| &nbsp;
+						span.card-about__label-color EAC (Таможенный союз)
+					.card-about__label Бесплатная доставка
+						| &nbsp;
+						span.card-about__label-color по России; Казахстану; Беларуси (условия)
+					.card-about__label Гарантии
+						| &nbsp;
+						span.card-about__label-color есть
+					.card-about__label Сезон
+						| &nbsp;
+						span.card-about__label-color лето
+					.card-about__label Название от производителя
+						| &nbsp;
+						span.card-about__label-color Платье "Бирюза - паетки"
+					.card-about__label Описание
+						| &nbsp;
+						span.card-about__label-color Платье из ткани пунто. Рукава 3/4. Горловина украшена качественными паетками. Длина на 50 размер - 86 см.
+				//end card-about
+
+				//begin card__list
+				.card-list
+					.card-list__title Рекомендуемые товары
+					.card-list__row.js-card-slider
+						//begin card
+						.card-list__card
+							.card
+								.card__in
+									.card__image
+										.card__image-hit
+										img.card__img(src='img/content/card-item-1.jpg' alt='image')
+									.card__content
+										.card__title Платье красное
+										.card__label Размеры:
+											+space
+											span.card__label-color 42-52
+										.card__label Кол-во в упаковке:
+											+space
+											span.card__label-color 4 шт
+										.card__row
+											.card__price 9 999
+												.card__price-currency
+											a.card__btn(href='#') Заказать
+								a.card__more(href='#')
+									+i('eye')
+									span.card__more-text Подробнее
+						//end card
+
+						//begin card
+						.card-list__card
+							.card
+								.card__in
+									.card__image
+										img.card__img(src='img/content/card-item-1.jpg' alt='image')
+									.card__content
+										.card__title Платье красное
+										.card__label Размеры:
+											+space
+											span.card__label-color 42-52
+										.card__label Кол-во в упаковке:
+											+space
+											span.card__label-color 4 шт
+										.card__row
+											.card__price 9 999
+												.card__price-currency
+											a.card__btn(href='#') Заказать
+								a.card__more(href='#')
+									+i('eye')
+									span.card__more-text Подробнее
+							//end card
+
+						//begin card
+						.card-list__card
+							.card
+								.card__in
+									.card__image
+										img.card__img(src='img/content/card-item-1.jpg' alt='image')
+									.card__content
+										.card__title Платье красное
+										.card__label Размеры:
+											+space
+											span.card__label-color 42-52
+										.card__label Кол-во в упаковке:
+											+space
+											span.card__label-color 4 шт
+										.card__row
+											.card__price 9 999
+												.card__price-currency
+											a.card__btn(href='#') Заказать
+								a.card__more(href='#')
+									+i('eye')
+									span.card__more-text Подробнее
+							//end card
+				//end card__list
+
+				//begin card__list
+				.card-list
+					.card-list__title Просмотренные товары
+					.card-list__row.js-card-slider
+						//begin card
+						.card-list__card
+							.card
+								.card__in
+									.card__image
+										.card__image-hit
+										img.card__img(src='img/content/card-item-1.jpg' alt='image')
+									.card__content
+										.card__title Платье красное в два ряда
+										.card__label Размеры:
+											+space
+											span.card__label-color 42-52
+										.card__label Кол-во в упаковке:
+											+space
+											span.card__label-color 4 шт
+										.card__row
+											.card__price 9 999
+												.card__price-currency
+											a.card__btn(href='#') Заказать
+								a.card__more(href='#')
+									+i('eye')
+									span.card__more-text Подробнее
+						//end card
+
+						//begin card
+						.card-list__card
+							.card
+								.card__in
+									.card__image
+										img.card__img(src='img/content/card-item-1.jpg' alt='image')
+									.card__content
+										.card__title Платье красное
+										.card__label Размеры:
+											+space
+											span.card__label-color 42-52
+										.card__label Кол-во в упаковке:
+											+space
+											span.card__label-color 4 шт
+										.card__row
+											.card__price 9 999
+												.card__price-currency
+											a.card__btn(href='#') Заказать
+								a.card__more(href='#')
+									+i('eye')
+									span.card__more-text Подробнее
+							//end card
+
+						//begin card
+						.card-list__card
+							.card
+								.card__in
+									.card__image
+										img.card__img(src='img/content/card-item-1.jpg' alt='image')
+									.card__content
+										.card__title Платье красное
+										.card__label Размеры:
+											+space
+											span.card__label-color 42-52
+										.card__label Кол-во в упаковке:
+											+space
+											span.card__label-color 4 шт
+										.card__row
+											.card__price 9 999
+												.card__price-currency
+											a.card__btn(href='#') Заказать
+								a.card__more(href='#')
+									+i('eye')
+									span.card__more-text Подробнее
+							//end card
+				//end card__list
+			//end content
+
+	//begin about-company
+	.about-company
+		.container
+			.about-company__title Интернет-магазин платьев
+			p.about-company__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+			p.about-company__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+	//end about-company

@@ -1,0 +1,171 @@
+extend includes/_layout
+block title
+	title Главная
+block content
+	.container
+		//begin main-slider
+		.main-slider.js-main-slider
+			.main-slider__item(style='background-image: url(../img/content/main-slider-1.jpg);')
+				img.main-slider__img(src='img/content/main-slider-1.jpg' alt='image')
+				.main-slider__content
+					.main-slider__title А в чем вы <br>будете встречать <br>новый год?
+					.main-slider__subtitle новая коллекция вечерних платьев 2017 года
+					a.main-slider__btn(href='#') Смотреть сейчас
+			.main-slider__item(style='background-image: url(../img/content/main-slider-1.jpg);')
+				img.main-slider__img(src='img/content/main-slider-1.jpg' alt='image')
+				.main-slider__content
+					.main-slider__title Заголовок в одну строку
+					.main-slider__subtitle описание располагается <br>в две строки
+					a.main-slider__btn(href='#') Смотреть сейчас
+		//end main-slider
+
+		//begin cards
+		.cards
+			.cards__col
+				a.cards__item(href='#')
+					img.cards__img(src='img/content/card-1.jpg' alt='image')
+					.cards__content
+						.cards__title женщинам
+					.cards__rect
+			.cards__col
+				a.cards__item(href='#')
+					img.cards__img(src='img/content/card-2.jpg' alt='image')
+					.cards__content
+						.cards__title детям
+					.cards__rect
+			.cards__col
+				a.cards__item(href='#')
+					img.cards__img(src='img/content/card-3.jpg' alt='image')
+					.cards__content
+						.cards__title Одежда для полных
+					.cards__rect
+			.cards__col
+				a.cards__item(href='#')
+					img.cards__img(src='img/content/card-4.jpg' alt='image')
+					.cards__content
+						.cards__title Одежда для молодежи
+					.cards__rect
+			.cards__col
+				a.cards__item(href='#')
+					img.cards__img(src='img/content/card-5.jpg' alt='image')
+					.cards__content
+						.cards__title ФУТБОЛКИ
+					.cards__rect
+			.cards__col
+				a.cards__item(href='#')
+					img.cards__img(src='img/content/card-6.jpg' alt='image')
+					.cards__content
+						.cards__title Брюки <br>и джинсы
+					.cards__rect
+			.cards__col.cards__col_x2
+				a.cards__item(href='#')
+					img.cards__img(src='img/content/card-7.jpg' alt='image')
+					.cards__content
+						.cards__title ПЛАТЬЯ И САРАФАНЫ
+					.cards__rect
+			.cards__col
+				a.cards__item(href='#')
+					img.cards__img(src='img/content/card-8.jpg' alt='image')
+					.cards__content
+						.cards__title КОФТЫ, <br>СВИТЕРЫ, <br>ДЖЕМПЕРЫ
+					.cards__rect
+			.cards__col.cards__col_x2
+				a.cards__item(href='#')
+					img.cards__img(src='img/content/card-9.jpg' alt='image')
+					.cards__content
+						.cards__title КУРТКИ, ВЕТРОВКИ И ПЛАЩИ
+					.cards__rect
+			.cards__col
+				a.cards__item(href='#')
+					img.cards__img(src='img/content/card-10.jpg' alt='image')
+					.cards__content
+						.cards__title АКСЕССУАРЫ
+					.cards__rect
+			.cards__col
+				a.cards__item(href='#')
+					img.cards__img(src='img/content/card-11.jpg' alt='image')
+					.cards__content
+						.cards__title РЕКОМЕНДУЕМЫЕ
+					.cards__rect
+			.cards__col
+				a.cards__item(href='#')
+					img.cards__img(src='img/content/card-12.jpg' alt='image')
+					.cards__content
+						.cards__title АКЦИИ
+					.cards__rect
+			.cards__col
+				a.cards__item(href='#')
+					img.cards__img(src='img/content/card-13.jpg' alt='image')
+					.cards__content
+						.cards__title НОВИНКИ
+					.cards__rect
+			.cards__col
+				a.cards__item(href='#')
+					img.cards__img(src='img/content/card-14.jpg' alt='image')
+					.cards__content
+						.cards__title ХИТЫ ПРОДАЖ
+					.cards__rect
+		//end cards
+
+	//begin edge
+	.edge
+		.edge__container.container
+			.edge__row
+				.edge__col
+					.edge__icon
+						+i('edge-1')
+					.edge__content
+						.edge__title БЕСПЛАТНАЯ ДОСТАВКА
+						.edge__subtitle В Россию, Беларусию и Казахстан
+				.edge__col
+					.edge__icon
+						+i('edge-2')
+					.edge__content
+						.edge__title УДОБНАЯ ОПЛАТА
+						.edge__subtitle Вы можете оплатить покупки не только наличными, но и банковскими картам
+				.edge__col
+					.edge__icon
+						+i('edge-3')
+					.edge__content
+						.edge__title ОГРОМНЫЙ ВЫБОР
+						.edge__subtitle Более 6000 моделей
+				.edge__col
+					.edge__icon
+						+i('edge-4')
+					.edge__content
+						.edge__title ПРОСТОЙ ВЫБОР
+						.edge__subtitle Десятки фильтров для вашего удобства
+	//end edge
+
+	//begin about-company
+	.about-company
+		.container
+			.about-company__title О компании
+			p.about-company__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+			p.about-company__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed diam.
+	//end about-company
+
+	.container
+		//begin sponsor-slider
+		.sponsor-slider.js-sponsor-slider
+			.sponsor-slider__item
+				img.sponsor-slider__img(src='img/content/sponsor-1.jpg' alt='image')
+			.sponsor-slider__item
+				img.sponsor-slider__img(src='img/content/sponsor-2.jpg' alt='image')
+			.sponsor-slider__item
+				img.sponsor-slider__img(src='img/content/sponsor-3.jpg' alt='image')
+			.sponsor-slider__item
+				img.sponsor-slider__img(src='img/content/sponsor-4.jpg' alt='image')
+			.sponsor-slider__item
+				img.sponsor-slider__img(src='img/content/sponsor-5.jpg' alt='image')
+			.sponsor-slider__item
+				img.sponsor-slider__img(src='img/content/sponsor-6.jpg' alt='image')
+			.sponsor-slider__item
+				img.sponsor-slider__img(src='img/content/sponsor-7.jpg' alt='image')
+			.sponsor-slider__item
+				img.sponsor-slider__img(src='img/content/sponsor-2.jpg' alt='image')
+			.sponsor-slider__item
+				img.sponsor-slider__img(src='img/content/sponsor-4.jpg' alt='image')
+			.sponsor-slider__item
+				img.sponsor-slider__img(src='img/content/sponsor-6.jpg' alt='image')
+		//end sponsor-slider

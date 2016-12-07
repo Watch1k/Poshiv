@@ -1,0 +1,56 @@
+header.header
+	.header__top
+		.container
+			nav.header__nav-about.nav-about
+				a.nav-about__link(href='#') О нас
+				a.nav-about__link(href='#') Оплата и доставка
+				a.nav-about__link(href='#') Как заказать
+				a.nav-about__link(href='#') Вопросы и ответы
+				a.nav-about__link(href='#') Отзывы
+				a.nav-about__link(href='#') Контакты
+			.header__top-right Время работы: пн-пт с 9 до 18
+	.header__mid
+		.header__mid-container.container
+			.header__col
+				a.logo(href='index.html')
+					img.logo__img(src='img/logo.png' alt='Kyrgyz Poshiv')
+					.logo__content
+						h1.logo__title Kyrgyz <span class="logo__title-line">poshiv</span>
+						span.logo__subtitle одежда из Киргизии оптом
+				.header__lang.lang
+					a.lang__link(href='#') lang
+					a.lang__link(href='#') lang
+			.header__col
+				form.header__search.search(action='#')
+					input.search__input(type='text' placeholder='поиск по сайту')
+					button.search__submit(type='submit')
+						+i('search')
+			.header__col
+				.header__phone 8 800 111-22-33
+				a.header__recall(href='#') обратный звонок
+			.header__col
+				.header__cart.cart
+					.cart__icon
+						+i('cart')
+					.cart__content
+						.cart__text товаров:&nbsp;
+							.cart__text-color 3
+						.cart__text на сумму:&nbsp;
+							.cart__text-color 1 350 р.
+				form.header__form-cart(action='#')
+					button.header__form-cart-submit(type='submit') Оформить заказ
+	.header__bot
+		//begin hamburger
+		.hamburger.hamburger_spin.js-hamburger
+			.hamburger__box
+				.hamburger__inner
+		//end hamburger
+		.container
+			nav.header__nav.nav.js-nav
+				a.nav__link(href='#') Женщинам
+				a.nav__link.is-active(href='#') Детям
+				a.nav__link(href='#') Одежда для полных
+				a.nav__link(href='#') Одежда для молодежи
+				a.nav__link(href='#') Хиты продаж
+				a.nav__link(href='#') Новинки
+				a.nav__link(href='#') Акции

@@ -1,0 +1,91 @@
+$icons: (0:0)
+$icons: map-merge($icons,(akticom: (X: -65px, Y:0px, W: 100px, H: 35px, TW: 165px, TH: 90px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(card-hit: (X: 0px, Y:0px, W: 61px, H: 61px, TW: 165px, TH: 90px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(currency-rub: (X: 0px, Y:-65px, W: 20px, H: 25px, TW: 165px, TH: 90px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(lang-1: (X: -92px, Y:-39px, W: 22px, H: 15px, TW: 165px, TH: 90px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(lang-2: (X: -65px, Y:-39px, W: 23px, H: 15px, TW: 165px, TH: 90px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(menu-arrow: (X: -24px, Y:-65px, W: 6px, H: 11px, TW: 165px, TH: 90px, IMG: '../img/icons.png')))
+$icons: map-merge($icons,(number-arrow: (X: -118px, Y:-39px, W: 12px, H: 7px, TW: 165px, TH: 90px, IMG: '../img/icons.png')))
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr)
+	$icon: map-get($icons, $icon)
+	@return map-get($icon, $attr)
+
+@mixin sprite($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	width: icon-attr($iconName, W)
+	height: icon-attr($iconName, H)
+	background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-position($iconName)
+	background-position: icon-attr($iconName, X) icon-attr($iconName, Y)
+@mixin sprite-retina($iconName)
+	background-image: url(icon-attr($iconName, IMG))
+	$width: icon-attr($iconName, W)
+	$height: icon-attr($iconName, H)
+	width: $width/2
+	height: $height/2
+	$x: icon-attr($iconName, X)
+	$y: icon-attr($iconName, Y)
+	background-position: $x/2 $y/2
+	$tw: icon-attr($iconName, TW) 	
+	$th: icon-attr($iconName, TH)
+	background-size: $tw/2 $th/2
+@mixin sprite-position-retina($iconName)
+	$x: icon-attr($iconName, X)
+	$y: icon-attr($iconName, Y)
+	background-position: $x/2 $y/2
+
+
+@mixin s($i)
+	+sprite($i)
+@mixin sp($i)
+	+sprite-position($i)
+@mixin sr($i)
+	+sprite-retina($i)
+@mixin spr($i)
+	+sprite-position-retina($i)
+
+.icon-akticom
+	width: 100px
+	height: 35px
+	background-image: url('../img/icons.png')
+	background-position: -65px 0px
+	background-size: 165px 90px
+.icon-card-hit
+	width: 61px
+	height: 61px
+	background-image: url('../img/icons.png')
+	background-position: 0px 0px
+	background-size: 165px 90px
+.icon-currency-rub
+	width: 20px
+	height: 25px
+	background-image: url('../img/icons.png')
+	background-position: 0px -65px
+	background-size: 165px 90px
+.icon-lang-1
+	width: 22px
+	height: 15px
+	background-image: url('../img/icons.png')
+	background-position: -92px -39px
+	background-size: 165px 90px
+.icon-lang-2
+	width: 23px
+	height: 15px
+	background-image: url('../img/icons.png')
+	background-position: -65px -39px
+	background-size: 165px 90px
+.icon-menu-arrow
+	width: 6px
+	height: 11px
+	background-image: url('../img/icons.png')
+	background-position: -24px -65px
+	background-size: 165px 90px
+.icon-number-arrow
+	width: 12px
+	height: 7px
+	background-image: url('../img/icons.png')
+	background-position: -118px -39px
+	background-size: 165px 90px

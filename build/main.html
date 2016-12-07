@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Главная</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="format-detection" content="telephone=no">
+  <!-- theme color for android 5.0 -->
+  <meta name="theme-color" content="#fff">
+  <!-- <meta name="viewport" content="width=1200"> -->
+  <!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+  <link rel="stylesheet" media="all" href="css/screen.css">
+  <!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <nav class="header__nav-about nav-about"><a class="nav-about__link" href="#">О нас</a><a class="nav-about__link" href="#">Оплата и доставка</a><a class="nav-about__link" href="#">Как заказать</a><a class="nav-about__link" href="#">Вопросы и ответы</a><a class="nav-about__link" href="#">Отзывы</a>
+            <a
+              class="nav-about__link" href="#">Контакты</a>
+          </nav>
+          <div class="header__top-right">Время работы: пн-пт с 9 до 18</div>
+        </div>
+      </div>
+      <div class="header__mid">
+        <div class="header__mid-container container">
+          <div class="header__col">
+            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.png" alt="Kyrgyz Poshiv">
+              <div class="logo__content">
+                <h1 class="logo__title">Kyrgyz <span class="logo__title-line">poshiv</span></h1><span class="logo__subtitle">одежда из Киргизии оптом</span>
+              </div>
+            </a>
+            <div class="header__lang lang"><a class="lang__link" href="#">lang</a><a class="lang__link" href="#">lang</a></div>
+          </div>
+          <div class="header__col">
+            <form class="header__search search" action="#">
+              <input class="search__input" type="text" placeholder="поиск по сайту">
+              <button class="search__submit" type="submit">
+                  <svg class="icon icon-search">
+                    <use xlink:href="img/sprite.svg#icon-search"></use>
+                  </svg>
+                </button>
+            </form>
+          </div>
+          <div class="header__col">
+            <div class="header__phone">8 800 111-22-33</div><a class="header__recall" href="#">обратный звонок</a>
+          </div>
+          <div class="header__col">
+            <div class="header__cart cart">
+              <div class="cart__icon">
+                <svg class="icon icon-cart">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+              </div>
+              <div class="cart__content">
+                <div class="cart__text">товаров:&nbsp;
+                  <div class="cart__text-color">3</div>
+                </div>
+                <div class="cart__text">на сумму:&nbsp;
+                  <div class="cart__text-color">1 350 р.</div>
+                </div>
+              </div>
+            </div>
+            <form class="header__form-cart" action="#">
+              <button class="header__form-cart-submit" type="submit">Оформить заказ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="header__bot">
+        <!--begin hamburger-->
+        <div class="hamburger hamburger_spin js-hamburger">
+          <div class="hamburger__box">
+            <div class="hamburger__inner"></div>
+          </div>
+        </div>
+        <!--end hamburger-->
+        <div class="container">
+          <nav class="header__nav nav js-nav"><a class="nav__link" href="#">Женщинам</a><a class="nav__link is-active" href="#">Детям</a><a class="nav__link" href="#">Одежда для полных</a><a class="nav__link" href="#">Одежда для молодежи</a><a class="nav__link" href="#">Хиты продаж</a>
+            <a
+              class="nav__link" href="#">Новинки</a><a class="nav__link" href="#">Акции</a></nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <!--begin main-slider-->
+        <div class="main-slider js-main-slider">
+          <div class="main-slider__item" style="background-image: url(../img/content/main-slider-1.jpg)"><img class="main-slider__img" src="img/content/main-slider-1.jpg" alt="image">
+            <div class="main-slider__content">
+              <div class="main-slider__title">А в чем вы <br>будете встречать <br>новый год?</div>
+              <div class="main-slider__subtitle">новая коллекция вечерних платьев 2017 года</div><a class="main-slider__btn" href="#">Смотреть сейчас</a>
+            </div>
+          </div>
+          <div class="main-slider__item" style="background-image: url(../img/content/main-slider-1.jpg)"><img class="main-slider__img" src="img/content/main-slider-1.jpg" alt="image">
+            <div class="main-slider__content">
+              <div class="main-slider__title">Заголовок в одну строку</div>
+              <div class="main-slider__subtitle">описание располагается <br>в две строки</div><a class="main-slider__btn" href="#">Смотреть сейчас</a>
+            </div>
+          </div>
+        </div>
+        <!--end main-slider-->
+        <!--begin cards-->
+        <div class="cards">
+          <div class="cards__col">
+            <a class="cards__item" href="#"><img class="cards__img" src="img/content/card-1.jpg" alt="image">
+              <div class="cards__content">
+                <div class="cards__title">женщинам</div>
+              </div>
+              <div class="cards__rect"></div>
+            </a>
+          </div>
+          <div class="cards__col">
+            <a class="cards__item" href="#"><img class="cards__img" src="img/content/card-2.jpg" alt="image">
+              <div class="cards__content">
+                <div class="cards__title">детям</div>
+              </div>
+              <div class="cards__rect"></div>
+            </a>
+          </div>
+          <div class="cards__col">
+            <a class="cards__item" href="#"><img class="cards__img" src="img/content/card-3.jpg" alt="image">
+              <div class="cards__content">
+                <div class="cards__title">Одежда для полных</div>
+              </div>
+              <div class="cards__rect"></div>
+            </a>
+          </div>
+          <div class="cards__col">
+            <a class="cards__item" href="#"><img class="cards__img" src="img/content/card-4.jpg" alt="image">
+              <div class="cards__content">
+                <div class="cards__title">Одежда для молодежи</div>
+              </div>
+              <div class="cards__rect"></div>
+            </a>
+          </div>
+          <div class="cards__col">
+            <a class="cards__item" href="#"><img class="cards__img" src="img/content/card-5.jpg" alt="image">
+              <div class="cards__content">
+                <div class="cards__title">ФУТБОЛКИ</div>
+              </div>
+              <div class="cards__rect"></div>
+            </a>
+          </div>
+          <div class="cards__col">
+            <a class="cards__item" href="#"><img class="cards__img" src="img/content/card-6.jpg" alt="image">
+              <div class="cards__content">
+                <div class="cards__title">Брюки <br>и джинсы</div>
+              </div>
+              <div class="cards__rect"></div>
+            </a>
+          </div>
+          <div class="cards__col cards__col_x2">
+            <a class="cards__item" href="#"><img class="cards__img" src="img/content/card-7.jpg" alt="image">
+              <div class="cards__content">
+                <div class="cards__title">ПЛАТЬЯ И САРАФАНЫ</div>
+              </div>
+              <div class="cards__rect"></div>
+            </a>
+          </div>
+          <div class="cards__col">
+            <a class="cards__item" href="#"><img class="cards__img" src="img/content/card-8.jpg" alt="image">
+              <div class="cards__content">
+                <div class="cards__title">КОФТЫ, <br>СВИТЕРЫ, <br>ДЖЕМПЕРЫ</div>
+              </div>
+              <div class="cards__rect"></div>
+            </a>
+          </div>
+          <div class="cards__col cards__col_x2">
+            <a class="cards__item" href="#"><img class="cards__img" src="img/content/card-9.jpg" alt="image">
+              <div class="cards__content">
+                <div class="cards__title">КУРТКИ, ВЕТРОВКИ И ПЛАЩИ</div>
+              </div>
+              <div class="cards__rect"></div>
+            </a>
+          </div>
+          <div class="cards__col">
+            <a class="cards__item" href="#"><img class="cards__img" src="img/content/card-10.jpg" alt="image">
+              <div class="cards__content">
+                <div class="cards__title">АКСЕССУАРЫ</div>
+              </div>
+              <div class="cards__rect"></div>
+            </a>
+          </div>
+          <div class="cards__col">
+            <a class="cards__item" href="#"><img class="cards__img" src="img/content/card-11.jpg" alt="image">
+              <div class="cards__content">
+                <div class="cards__title">РЕКОМЕНДУЕМЫЕ</div>
+              </div>
+              <div class="cards__rect"></div>
+            </a>
+          </div>
+          <div class="cards__col">
+            <a class="cards__item" href="#"><img class="cards__img" src="img/content/card-12.jpg" alt="image">
+              <div class="cards__content">
+                <div class="cards__title">АКЦИИ</div>
+              </div>
+              <div class="cards__rect"></div>
+            </a>
+          </div>
+          <div class="cards__col">
+            <a class="cards__item" href="#"><img class="cards__img" src="img/content/card-13.jpg" alt="image">
+              <div class="cards__content">
+                <div class="cards__title">НОВИНКИ</div>
+              </div>
+              <div class="cards__rect"></div>
+            </a>
+          </div>
+          <div class="cards__col">
+            <a class="cards__item" href="#"><img class="cards__img" src="img/content/card-14.jpg" alt="image">
+              <div class="cards__content">
+                <div class="cards__title">ХИТЫ ПРОДАЖ</div>
+              </div>
+              <div class="cards__rect"></div>
+            </a>
+          </div>
+        </div>
+        <!--end cards-->
+      </div>
+      <!--begin edge-->
+      <div class="edge">
+        <div class="edge__container container">
+          <div class="edge__row">
+            <div class="edge__col">
+              <div class="edge__icon">
+                <svg class="icon icon-edge-1">
+                    <use xlink:href="img/sprite.svg#icon-edge-1"></use>
+                  </svg>
+              </div>
+              <div class="edge__content">
+                <div class="edge__title">БЕСПЛАТНАЯ ДОСТАВКА</div>
+                <div class="edge__subtitle">В Россию, Беларусию и Казахстан</div>
+              </div>
+            </div>
+            <div class="edge__col">
+              <div class="edge__icon">
+                <svg class="icon icon-edge-2">
+                    <use xlink:href="img/sprite.svg#icon-edge-2"></use>
+                  </svg>
+              </div>
+              <div class="edge__content">
+                <div class="edge__title">УДОБНАЯ ОПЛАТА</div>
+                <div class="edge__subtitle">Вы можете оплатить покупки не только наличными, но и банковскими картам</div>
+              </div>
+            </div>
+            <div class="edge__col">
+              <div class="edge__icon">
+                <svg class="icon icon-edge-3">
+                    <use xlink:href="img/sprite.svg#icon-edge-3"></use>
+                  </svg>
+              </div>
+              <div class="edge__content">
+                <div class="edge__title">ОГРОМНЫЙ ВЫБОР</div>
+                <div class="edge__subtitle">Более 6000 моделей</div>
+              </div>
+            </div>
+            <div class="edge__col">
+              <div class="edge__icon">
+                <svg class="icon icon-edge-4">
+                    <use xlink:href="img/sprite.svg#icon-edge-4"></use>
+                  </svg>
+              </div>
+              <div class="edge__content">
+                <div class="edge__title">ПРОСТОЙ ВЫБОР</div>
+                <div class="edge__subtitle">Десятки фильтров для вашего удобства</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--end edge-->
+      <!--begin about-company-->
+      <div class="about-company">
+        <div class="container">
+          <div class="about-company__title">О компании</div>
+          <p class="about-company__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie
+            elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales
+            nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed
+            diam.</p>
+          <p class="about-company__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie
+            elit, et lacinia ipsum quam nec dui. Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, elementum in tempus ut, vehicula eu diam. Pellentesque rhoncus aliquam mattis. Ut vulputate eros sed felis sodales
+            nec vulputate justo hendrerit. Vivamus varius pretium ligula, a aliquam odio euismod sit amet. Quisque laoreet sem sit amet orci ullamcorper at ultricies metus viverra. Pellentesque arcu mauris, malesuada quis ornare accumsan, blandit sed
+            diam.</p>
+        </div>
+      </div>
+      <!--end about-company-->
+      <div class="container">
+        <!--begin sponsor-slider-->
+        <div class="sponsor-slider js-sponsor-slider">
+          <div class="sponsor-slider__item"><img class="sponsor-slider__img" src="img/content/sponsor-1.jpg" alt="image"></div>
+          <div class="sponsor-slider__item"><img class="sponsor-slider__img" src="img/content/sponsor-2.jpg" alt="image"></div>
+          <div class="sponsor-slider__item"><img class="sponsor-slider__img" src="img/content/sponsor-3.jpg" alt="image"></div>
+          <div class="sponsor-slider__item"><img class="sponsor-slider__img" src="img/content/sponsor-4.jpg" alt="image"></div>
+          <div class="sponsor-slider__item"><img class="sponsor-slider__img" src="img/content/sponsor-5.jpg" alt="image"></div>
+          <div class="sponsor-slider__item"><img class="sponsor-slider__img" src="img/content/sponsor-6.jpg" alt="image"></div>
+          <div class="sponsor-slider__item"><img class="sponsor-slider__img" src="img/content/sponsor-7.jpg" alt="image"></div>
+          <div class="sponsor-slider__item"><img class="sponsor-slider__img" src="img/content/sponsor-2.jpg" alt="image"></div>
+          <div class="sponsor-slider__item"><img class="sponsor-slider__img" src="img/content/sponsor-4.jpg" alt="image"></div>
+          <div class="sponsor-slider__item"><img class="sponsor-slider__img" src="img/content/sponsor-6.jpg" alt="image"></div>
+        </div>
+        <!--end sponsor-slider-->
+      </div>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__top-container container">
+        <div class="footer__col">
+          <div class="footer__title">Каталог</div>
+          <nav class="footer__nav"><a class="footer__nav-link" href="#">Для мужчин  </a><a class="footer__nav-link" href="#">Для женщин</a><a class="footer__nav-link" href="#">Для детей</a><a class="footer__nav-link" href="#">Акции</a><a class="footer__nav-link" href="#">Новинки</a>
+            <a
+              class="footer__nav-link" href="#">Хиты продаж</a>
+          </nav>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">О компании</div>
+          <nav class="footer__nav"><a class="footer__nav-link" href="#">О компании</a><a class="footer__nav-link" href="#">Оплата и доставка</a><a class="footer__nav-link" href="#">Как заказать</a><a class="footer__nav-link" href="#">Вопросы и ответы</a><a class="footer__nav-link"
+              href="#">Отзывы</a></nav>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">О компании</div>
+          <div class="footer__socials socials">
+            <a class="socials__link" href="#">
+              <svg class="icon icon-soc-vk">
+                  <use xlink:href="img/sprite.svg#icon-soc-vk"></use>
+                </svg></a>
+            <a class="socials__link" href="#">
+              <svg class="icon icon-soc-fb">
+                  <use xlink:href="img/sprite.svg#icon-soc-fb"></use>
+                </svg></a>
+            <a class="socials__link" href="#">
+              <svg class="icon icon-soc-tw">
+                  <use xlink:href="img/sprite.svg#icon-soc-tw"></use>
+                </svg></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">Способы оплаты</div><img src="img/content/visa.png" alt="Visa">
+          <div class="footer__text-payment">Вы можете оплатить покупки наличными при получении, либо выбрать другой способ оплаты.</div>
+        </div>
+        <div class="footer__col">
+          <div class="footer__title">Время работы: пн-пт с 9 до 18</div>
+          <div class="footer__phone">8 800 111-22-33</div><a class="footer__recall" href="#">обратный звонок</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bot">
+      <div class="container">
+        <a class="footer__logo" href="index.html"><img class="footer__logo-img" src="img/logo-footer.png" alt="Kyrgyz Poshiv"></a>
+        <div class="footer__copy">&copy; ООО "Kyrgyz-poshiv", 2016</div>
+        <div class="footer__right">
+          <div class="footer__right-text">Создано руками</div><a class="footer__right-link" href="#">Akticom</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
